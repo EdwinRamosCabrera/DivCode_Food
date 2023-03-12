@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,13 +40,13 @@ body {
 }
 
 .menu {
-position: absolute;
-top: 20px;
-left: 0;
-right: 0;
-display: flex;
-justify-content: center;
-z-index: 1000;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
 }
 
 .navbar {
@@ -189,11 +189,13 @@ z-index: 1000;
     width: 15%;
     order: 1;
     display: block;
-    padding-inline-start: 20px 0px;
+    padding: 20px 0px;
     text-align: center;
     cursor: pointer;
     color: #a7a7a7;
     font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
@@ -212,6 +214,10 @@ z-index: 1000;
 .tabs input[type="radio"]:checked + label {
     border-bottom: 2px solid #db241b;
     color: #ffffff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab{
+    display: block;
 }
 
 .product {
@@ -264,7 +270,7 @@ z-index: 1000;
     margin-bottom: 15px;
 }
 
-.product-img span {
+.product-txt span {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 800;
